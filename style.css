@@ -12,6 +12,18 @@ html, body{
     overflow:auto;
 
 }
+#logo i{
+    color: lightseagreen;
+    animation: change 10s infinite linear ;
+}
+@keyframes change{
+    0%{color: lime;}
+    20%{color: purple;}
+    40%{color: indianred;}
+    60%{color: currentColor;}
+    100%{color: brown;}
+
+}
 nav{
     border-bottom: 5px solid rgb(72, 61, 61);
     display: flex;
@@ -46,7 +58,7 @@ nav{
     width:80px;
     
     }
-    .logo i{
+    #logo i{
         max-width: 100%;
         height: 100px;
        
@@ -85,6 +97,9 @@ ul li{
 ul li:hover{
     cursor: pointer;
     color: skyblue;
+}
+.flow li i{
+    animation: change 10s infinite linear ;
 }
 .main{
     margin-left: 10%;
